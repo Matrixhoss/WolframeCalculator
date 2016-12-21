@@ -11,5 +11,8 @@
                 <root id="test.src.dir"/>
             </test-roots>
         </data>
+        <libraries xmlns="http://www.netbeans.org/ns/ant-project-libraries/1">
+            <definitions>F:\downloads\Java_Binding_1_1\WolframAlphaJavaLibrary\nblibraries.properties</definitions>
+        </libraries>
     </configuration>
 </project>
