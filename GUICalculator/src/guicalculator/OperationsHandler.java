@@ -12,6 +12,7 @@ package guicalculator;
 //testing 
 //push
 //fuck
+//7aram kda walahy
 
 public class OperationsHandler {
 
