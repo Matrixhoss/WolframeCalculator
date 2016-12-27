@@ -4,14 +4,7 @@
  * and open the template in the editor.
  */
 package guicalculator;
-import com.wolfram.alpha.WAEngine;
-import com.wolfram.alpha.WAException;
-import com.wolfram.alpha.WAPlainText;
-import com.wolfram.alpha.WAPod;
-import com.wolfram.alpha.WAQuery;
-import com.wolfram.alpha.WAQueryResult;
-import com.wolfram.alpha.WASubpod;
-
+import com.wolfram.alpha.*;
 /*
  * A simple example program demonstrating the WolframAlpha.jar library. The program
  * performs a query given on the command line and prints out the resulting pod titles
