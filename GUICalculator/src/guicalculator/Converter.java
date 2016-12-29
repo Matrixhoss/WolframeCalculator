@@ -10,5 +10,5 @@ public abstract class Converter {
     
     }
 
-    public abstract void convert(String f, String t);
+    public abstract String convert(String f, String t);
 }

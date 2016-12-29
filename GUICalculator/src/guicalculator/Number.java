@@ -1,16 +1,27 @@
-
 package guicalculator;
 
-
 public class Number extends Converter {
-    
-    public Number(String from){
+
+    public Number(String from) {
         super(from);
     }
-    public void convert(String fn,String tn){
+
+    public String convert(String fn, String tn) {
         String x;
-        x=from+" "+fn+" to "+tn;
-        to=Solver.solve(x);
-    
+        char[] y;
+        char[] z;
+        x = from + " " + fn + " to " + tn;
+        to = Solver.solve(x);
+        y = to.toCharArray();
+        z = tn.toCharArray();
+        x="";
+        for (int i = 0; i < y.length; i++) {
+            if (y[i]==z[0]){
+            break;
+            }
+            x=x+y[i];
+        }
+        return x;
+
     }
 }
