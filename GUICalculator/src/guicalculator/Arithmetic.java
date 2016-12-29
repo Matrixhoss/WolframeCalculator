@@ -10,5 +10,9 @@ package guicalculator;
  * @author Hossam
  */
 public class Arithmetic extends Calculations{
+    public  String Calculate (String equation){
     
+        return Solver.solve(equation);
+    
+    }
 }

@@ -10,5 +10,5 @@ package guicalculator;
  * @author Hossam
  */
 public abstract class Calculations {
-    
+    public abstract String Calculate (String equation);
 }

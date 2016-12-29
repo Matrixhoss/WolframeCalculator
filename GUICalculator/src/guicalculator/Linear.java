@@ -10,5 +10,8 @@ package guicalculator;
  * @author Hossam
  */
 public class Linear extends Calculations{
+    public  String Calculate (String equation){
+    return "";
+    }
     
 }

@@ -10,5 +10,7 @@ package guicalculator;
  * @author Hossam
  */
 public class EquationsHandler extends Calculations{
-    
+     public  String Calculate (String equation){
+    return "";
+    }
 }
