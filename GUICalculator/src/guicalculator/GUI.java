@@ -886,7 +886,8 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void ConvertNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConvertNumActionPerformed
-        // TODO add your handling code here:
+        Number n = new Number(jTextField2.getText());
+        jTextField7.setText(n.convert(jComboBox3.getSelectedItem().toString(), jComboBox5.getSelectedItem().toString()));
     }//GEN-LAST:event_ConvertNumActionPerformed
 
     private void BackButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton2ActionPerformed
