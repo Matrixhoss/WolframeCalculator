@@ -167,7 +167,9 @@ public class Solver {
                 for (WAPod pod : queryResult.getPods()) {
                     if (!pod.isError()) {
                         System.out.println(pod.getTitle());
-                        
+                        if (pod.getTitle().equals("Results") && Choose.equals("Result")) {
+                            Choose = "Results";
+                        }
                         if (pod.getTitle().equals(Choose)){
                         System.out.println("------------");
                         for (WASubpod subpod : pod.getSubpods()) {
