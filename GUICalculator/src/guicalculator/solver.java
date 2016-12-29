@@ -48,13 +48,13 @@ import com.wolfram.alpha.*;
 
 
 
-public class OperationsHandler {
+public class solver {
 
     /**
      * @param args the command line arguments
     */
     private static String appid = "H9EVL4-5RQEYA2T8Q";
-    public static void main(String[] args) {
+/**   public static void main(String[] args) {
 
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input = "convert 101100 from binary to decimal";
@@ -122,7 +122,7 @@ public class OperationsHandler {
             e.printStackTrace();
         }
     }
-    
+    */
      public static String  solve (String X){
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input =X;
