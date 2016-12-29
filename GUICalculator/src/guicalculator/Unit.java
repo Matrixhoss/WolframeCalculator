@@ -4,8 +4,8 @@ package guicalculator;
 
 public class Unit extends Converter{
  
-    public Unit(String from,String to){
-        super(from,to);
+    public Unit(String from){
+        super(from);
     }
      public void convert(String fu ,String tu){
         String x;
