@@ -477,6 +477,11 @@ public class GUI extends javax.swing.JFrame {
         jTextField4.setText("0");
 
         CalculateArithmatic.setText("Calculate");
+        CalculateArithmatic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalculateArithmaticActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -954,6 +959,12 @@ public class GUI extends javax.swing.JFrame {
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
+
+    private void CalculateArithmaticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateArithmaticActionPerformed
+     Arithmetic c = new Arithmetic();
+     c.Calculate(jTextField4.getText());
+     jTextField8.setText(c.Calculate(jTextField4.getText()));
+    }//GEN-LAST:event_CalculateArithmaticActionPerformed
 
     /**
      * @param args the command line arguments

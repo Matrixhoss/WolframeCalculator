@@ -10,9 +10,19 @@ package guicalculator;
  * @author Hossam
  */
 public class Arithmetic extends Calculations{
-    public  String Calculate (String equation){
-    
-        return Solver.solve(equation,"Result");
-    
-    }
+     public  String Calculate (String equation){
+         double x;
+         boolean y = false ;
+         try {
+              x= Double.parseDouble(Solver.solve(equation, "Result"));
+         } catch (Exception e) {
+             y = true;
+         }
+         if (y == false) {
+             return Solver.solve(equation, "Result");
+         }else {
+         return Solver.solve(equation, "Decimal approximation");
+         }
+     
+     }
 }
