@@ -452,17 +452,17 @@ public class GUI extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(189, 189, 189)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addGap(145, 145, 145))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
+                .addGap(54, 54, 54)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -545,9 +545,10 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Added Equations:-\n-------------------");
         jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -705,7 +706,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_BackButton3ActionPerformed
 
     private void CalculateArithmatic1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateArithmatic1ActionPerformed
-jTextArea1.setText(jTextArea1.getText()+"\n "+jTextField5.getText());   
+        if(input.equals(" "))
+            input = jTextField5.getText();
+        else input = input+","+jTextField5.getText();        
+        jTextArea1.setText(jTextArea1.getText()+"\n "+jTextField5.getText());   
 // TODO add your handling code here:
     }//GEN-LAST:event_CalculateArithmatic1ActionPerformed
 
@@ -714,7 +718,8 @@ jTextArea1.setText(jTextArea1.getText()+"\n "+jTextField5.getText());
     }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void BackButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton4ActionPerformed
-String x = Solver.solve(jTextArea1.getText());
+System.out.println(input);
+        String x = Solver.solve(input);
 System.out.println("Result = "+ x);// TODO add your handling code here:
     }//GEN-LAST:event_BackButton4ActionPerformed
 
@@ -783,6 +788,7 @@ System.out.println("Result = "+ x);// TODO add your handling code here:
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    String input=" ";
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
