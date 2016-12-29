@@ -196,6 +196,11 @@ public class GUI extends javax.swing.JFrame {
         jLabel4.setText("Convert From");
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kg","gm", "km","m","feet" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "kg","gm", "km","m","feet" }));
 
@@ -867,7 +872,8 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void ConvertUnitsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConvertUnitsActionPerformed
-        // TODO add your handling code here:
+        Unit u = new Unit(jTextField1.getText());
+        jTextField3.setText(u.convert(jComboBox2.getSelectedItem().toString(), jComboBox4.getSelectedItem().toString()));
     }//GEN-LAST:event_ConvertUnitsActionPerformed
 
     private void BackButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton1ActionPerformed
@@ -934,6 +940,10 @@ public class GUI extends javax.swing.JFrame {
     private void BackButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BackButton6ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+            // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments

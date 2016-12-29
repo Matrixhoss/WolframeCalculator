@@ -1,7 +1,7 @@
 package guicalculator;
 
 public class Number extends Converter {
-
+    
     public Number(String from) {
         super(from);
     }
