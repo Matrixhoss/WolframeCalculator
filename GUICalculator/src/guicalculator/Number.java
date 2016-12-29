@@ -34,7 +34,7 @@ public class Number extends Converter {
         z = tn.toCharArray();
         x = "";
         for (int i = 0; i < y.length; i++) {
-            if (y[i] == z[0]) {
+            if (y[i] == z[0] ||y[i]=='_') {
                 break;
             }
             x = x + y[i];
