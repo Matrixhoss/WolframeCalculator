@@ -848,6 +848,8 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="BackButton3" min="-2" pref="88" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+                          <Component id="BackButton7" min="-2" pref="121" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="BackButton4" min="-2" pref="88" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -865,6 +867,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="BackButton3" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="BackButton4" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="BackButton7" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -1002,6 +1005,14 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButton4ActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JButton" name="BackButton7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Clear Equations"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButton7ActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel15">
@@ -1031,6 +1042,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="BackButton5" min="-2" pref="88" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
+                          <Component id="BackButton8" min="-2" pref="121" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="271" max="-2" attributes="0"/>
                           <Component id="BackButton6" min="-2" pref="88" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -1047,6 +1060,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="BackButton5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="BackButton6" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="BackButton8" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -1182,6 +1196,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButton6ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="BackButton8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Clear Equations"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButton8ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
