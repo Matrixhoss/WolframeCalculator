@@ -11,7 +11,7 @@ public class Number extends Converter {
         char[] y;
         char[] z;
         x = from + " " + fn + " to " + tn;
-        to = Solver.solve(x);
+        to = Solver.solve(x,"Result");
         y = to.toCharArray();
         z = tn.toCharArray();
         x="";
