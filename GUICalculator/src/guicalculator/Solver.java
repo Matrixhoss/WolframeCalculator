@@ -122,7 +122,7 @@ public class Solver {
         }
     }
     
-     public static String  solve (String X){
+     public static String  solve (String X , String Choose){
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input =X;
         
@@ -167,7 +167,8 @@ public class Solver {
                 for (WAPod pod : queryResult.getPods()) {
                     if (!pod.isError()) {
                         System.out.println(pod.getTitle());
-                        if (pod.getTitle().equals("Result") || pod.getTitle().equals("Solution")) {
+                        
+                        if (pod.getTitle().equals(Choose)){
                         System.out.println("------------");
                         for (WASubpod subpod : pod.getSubpods()) {
                             for (Object element : subpod.getContents()) {

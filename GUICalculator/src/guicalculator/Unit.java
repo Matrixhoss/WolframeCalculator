@@ -10,7 +10,8 @@ public class Unit extends Converter{
      public void convert(String fu ,String tu){
         String x;
         x=from+" "+fu+" to "+tu;
-        to=Solver.solve(x);
+        to=Solver.solve(x , "Result");
+        
     
     }
 }

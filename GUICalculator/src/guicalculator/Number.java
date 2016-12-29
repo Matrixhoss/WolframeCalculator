@@ -10,7 +10,7 @@ public class Number extends Converter {
     public void convert(String fn,String tn){
         String x;
         x=from+" "+fn+" to "+tn;
-        to=Solver.solve(x);
+        to=Solver.solve(x,"Result");
     
     }
 }

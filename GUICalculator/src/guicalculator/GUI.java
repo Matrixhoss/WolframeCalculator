@@ -853,7 +853,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void BackButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton4ActionPerformed
         System.out.println(input);
-        String x = Solver.solve(input);
+        String x = Solver.solve(input ,"Solution");
         System.out.println("Result = " + x);// TODO add your handling code here:
     }//GEN-LAST:event_BackButton4ActionPerformed
 
