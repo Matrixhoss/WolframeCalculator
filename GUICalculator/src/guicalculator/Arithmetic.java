@@ -11,16 +11,31 @@ package guicalculator;
  */
 public class Arithmetic extends Calculations{
      public  String Calculate (String equation){
-         double x;
-         boolean y = false ;
+         double x1,x2,x3;
+         boolean y1 = false ,y2 =false , y3=false ;
          try {
-              x= Double.parseDouble(Solver.solve(equation, "Result"));
-         } catch (Exception e) {
-             y = true;
+              x1= Double.parseDouble(Solver.solve(equation, "Result"));
+         } catch (NumberFormatException e) {
+             y1 = true;
          }
-         if (y == false) {
+         try {
+              x2= Double.parseDouble(Solver.solve(equation, "Decimal approximation"));
+         } catch (NumberFormatException e) {
+             y2 = true;
+         }
+         try {
+              x3= Double.parseDouble(Solver.solve(equation, "Exact result"));
+         } catch (NumberFormatException e) {
+             y3 = true;
+         }
+         
+         if (y1 == false) {
              return Solver.solve(equation, "Result");
-         }else {
+         }
+         else if(y3 == false){
+          return Solver.solve(equation, "Exact result");
+         }
+         else{
          return Solver.solve(equation, "Decimal approximation");
          }
      
