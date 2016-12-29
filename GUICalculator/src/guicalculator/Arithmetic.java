@@ -12,7 +12,7 @@ package guicalculator;
 public class Arithmetic extends Calculations{
     public  String Calculate (String equation){
     
-        return Solver.solve(equation);
+        return Solver.solve(equation,"Result");
     
     }
 }

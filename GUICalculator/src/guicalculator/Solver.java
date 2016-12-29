@@ -54,10 +54,10 @@ public class Solver {
      * @param args the command line arguments
     */
     private static String appid = "H9EVL4-5RQEYA2T8Q";
-/**   public static void main(String[] args) {
+  public static void main(String[] args) {
 
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
-        String input = "convert 101100 from binary to decimal";
+        String input = "2x + y = 7,3x - y = 8";
         if (args.length > 0)
             input = args[0];
         
@@ -101,7 +101,6 @@ public class Solver {
                 for (WAPod pod : queryResult.getPods()) {
                     if (!pod.isError()) {
                         System.out.println(pod.getTitle());
-                        if (pod.getTitle().equals("Result")) {
                         System.out.println("------------");
                         for (WASubpod subpod : pod.getSubpods()) {
                             for (Object element : subpod.getContents()) {
@@ -111,7 +110,7 @@ public class Solver {
                                 }
                             }
                         }
-                        }
+                        
                         System.out.println("");
                     }
                 }
@@ -122,8 +121,8 @@ public class Solver {
             e.printStackTrace();
         }
     }
-    */
-     public static String  solve (String X){
+    
+     public static String  solve (String X , String Choose){
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input =X;
         
@@ -168,7 +167,8 @@ public class Solver {
                 for (WAPod pod : queryResult.getPods()) {
                     if (!pod.isError()) {
                         System.out.println(pod.getTitle());
-                        if (pod.getTitle().equals("Result")) {
+                        
+                        if (pod.getTitle().equals(Choose)){
                         System.out.println("------------");
                         for (WASubpod subpod : pod.getSubpods()) {
                             for (Object element : subpod.getContents()) {
