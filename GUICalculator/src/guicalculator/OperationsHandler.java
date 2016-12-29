@@ -57,7 +57,7 @@ public class OperationsHandler {
     public static void main(String[] args) {
 
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
-        String input = "pi";
+        String input = "(x*x)+x+5";
         if (args.length > 0)
             input = args[0];
         
