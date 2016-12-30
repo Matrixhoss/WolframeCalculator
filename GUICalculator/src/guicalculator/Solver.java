@@ -54,7 +54,7 @@ public class Solver {
      * @param args the command line arguments
     */
     private static String appid = "H9EVL4-5RQEYA2T8Q";
-  public static void main(String[] args) {
+ /* public static void main(String[] args) {
 
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input = "2x + y = 7,3x - y = 8";
@@ -120,7 +120,7 @@ public class Solver {
         } catch (WAException e) {
             e.printStackTrace();
         }
-    }
+    }*/
     
      public static String  solve (String X , String Choose){
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
@@ -147,10 +147,10 @@ public class Solver {
         
         try {
             // For educational purposes, print out the URL we are about to send:
-            System.out.println("Query URL:");
-            System.out.println(engine.toURL(query));
-            System.out.println("");
-            
+//            System.out.println("Query URL:");
+//            System.out.println(engine.toURL(query));
+//            System.out.println("");
+//            
             // This sends the URL to the Wolfram|Alpha server, gets the XML result
             // and parses it into an object hierarchy held by the WAQueryResult object.
             WAQueryResult queryResult = engine.performQuery(query);
@@ -166,16 +166,16 @@ public class Solver {
                 System.out.println("Successful query. Pods follow:\n");
                 for (WAPod pod : queryResult.getPods()) {
                     if (!pod.isError()) {
-                        System.out.println(pod.getTitle());
+                      //  System.out.println(pod.getTitle());
                         if (pod.getTitle().equals("Results") && Choose.equals("Result")) {
                             Choose = "Results";
                         }
                         if (pod.getTitle().equals(Choose)){
-                        System.out.println("------------");
+                        //System.out.println("------------");
                         for (WASubpod subpod : pod.getSubpods()) {
                             for (Object element : subpod.getContents()) {
                                 if (element instanceof WAPlainText) {
-                                    System.out.println(((WAPlainText) element).getText());
+                                   // System.out.println(((WAPlainText) element).getText());
                                     String ret =((WAPlainText) element).getText();
                                     System.out.println("");
                                     return ret ;

@@ -947,9 +947,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void BackButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton4ActionPerformed
-        System.out.println(input);
-        String x = Solver.solve(input ,"Solution");
-        System.out.println("Result = " + x);// TODO add your handling code here:
+        Linear l = new Linear();
+        String x = l.Calculate(input);
+        input = " ";
+        jTextArea1.setText("Result = \n" + x);// TODO add your handling code here:
     }//GEN-LAST:event_BackButton4ActionPerformed
 
     private void BackButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton5ActionPerformed
@@ -996,7 +997,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void BackButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton7ActionPerformed
 input = " ";
-jTextArea1.setText(jTextArea1.getText()+"\nEquations Cleared");
+jTextArea1.setText("Equations Cleared");
 // TODO add your handling code here:
     }//GEN-LAST:event_BackButton7ActionPerformed
 

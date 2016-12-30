@@ -11,6 +11,6 @@ package guicalculator;
  */
 public class EquationsHandler extends Calculations{
      public  String Calculate (String equation){
-    return "";
+        return "";
     }
 }
