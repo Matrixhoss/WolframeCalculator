@@ -14,11 +14,11 @@ public class Arithmetic extends Calculations{
 //         } catch (NumberFormatException e) {
 //             y2 = true;
 //         }
-         try {
+        /* try {
               x3= Double.parseDouble(Solver.solve(equation, "Exact result"));
          } catch (NumberFormatException e) {
              y3 = true;
-         }
+         }*/
          
          if (y1 == false) {
              return Solver.solve(equation, "Result");
