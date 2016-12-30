@@ -19,13 +19,11 @@ public class Arithmetic extends Calculations{
          } catch (NumberFormatException e) {
              y3 = true;
          }*/
-         
+         String s = Solver.solve(equation, "Decimal approximation");
          if (y1 == false) {
              return Solver.solve(equation, "Result");
          }
-         else if(!Solver.solve(equation, "Decimal approximation").equals("")){
-             
-             String s =Solver.solve(equation, "Decimal approximation");
+         else if(!s.equals("")){
              String ss = "";
              for (int i = 0; i < s.length(); i++) {
                  if(s.toCharArray()[i]=='×'){

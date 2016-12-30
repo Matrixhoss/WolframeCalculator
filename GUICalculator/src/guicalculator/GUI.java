@@ -1104,13 +1104,11 @@ public class GUI extends javax.swing.JFrame {
 
     private void CalculateArithmaticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateArithmaticActionPerformed
         Calculations c = new Arithmetic();
-        c.Calculate(jTextField4.getText());
-        if (c.Calculate(jTextField4.getText()).equals("Cant be solved")) {
+       String s = c.Calculate(jTextField4.getText());
+        if (s.equals("Cant be solved")) {
             jTextField8.setText("Cant be solved");
         } else {
-            String s = c.Calculate(jTextField4.getText());
             jTextField8.setText(s);
-
         }
     }//GEN-LAST:event_CalculateArithmaticActionPerformed
 
