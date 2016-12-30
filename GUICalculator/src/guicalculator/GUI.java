@@ -15,9 +15,9 @@ public class GUI extends javax.swing.JFrame {
      * Creates new form GUI
      */
     public GUI() {
-        
+
         initComponents();
-        this.setSize(871,550);
+        this.setSize(871, 550);
     }
 
     /**
@@ -98,6 +98,7 @@ public class GUI extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         CalculateArithmatic3 = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
+        BackButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -453,7 +454,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(BackButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 741, Short.MAX_VALUE))
                     .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -545,7 +546,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(36, 36, 36)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -814,7 +815,7 @@ public class GUI extends javax.swing.JFrame {
                         .addGap(13, 13, 13))
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(BackButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 261, Short.MAX_VALUE)
                         .addComponent(BackButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(271, 271, 271)
                         .addComponent(BackButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -871,7 +872,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addGap(241, 241, 241)
                 .addComponent(jLabel15)
-                .addContainerGap(256, Short.MAX_VALUE))
+                .addContainerGap(145, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -892,7 +893,7 @@ public class GUI extends javax.swing.JFrame {
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 827, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -910,7 +911,7 @@ public class GUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(168, 168, 168))
+                .addGap(279, 279, 279))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -922,21 +923,31 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        BackButton9.setText("Back");
+        BackButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackButton9ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, 851, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 851, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 851, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 851, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(BackButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -958,7 +969,9 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BackButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel2, jPanel3});
@@ -969,11 +982,11 @@ public class GUI extends javax.swing.JFrame {
     private void ConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmActionPerformed
         jPanel2.setVisible(false);
         input = " ";
-        
+
         switch (jComboBox1.getSelectedItem().toString()) {
             //"Linear Calculations", "Arithmatic Calculations", "Higher Degree Calculations", "Units Converter", "Numbers Converter", "Drawer"
             case "Units Converter":
-               
+
                 jPanel3.setVisible(true);
                 break;
             case "Numbers Converter":
@@ -990,7 +1003,7 @@ public class GUI extends javax.swing.JFrame {
                 break;
             case "Drawer":
                 jPanel18.setVisible(true);
-                this.setSize(871,750);
+                this.setSize(871, 750);
                 break;
 
         }
@@ -1007,7 +1020,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void ConvertUnitsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConvertUnitsActionPerformed
-        Unit u = new Unit(jTextField1.getText());
+        Converter u = new Unit(jTextField1.getText());
         jTextField3.setText(u.convert(jComboBox2.getSelectedItem().toString(), jComboBox4.getSelectedItem().toString()));
     }//GEN-LAST:event_ConvertUnitsActionPerformed
 
@@ -1021,7 +1034,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void ConvertNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConvertNumActionPerformed
-        Number n = new Number(jTextField2.getText(), jComboBox3.getSelectedItem().toString());
+        Converter n = new Number(jTextField2.getText(), jComboBox3.getSelectedItem().toString());
         jTextField7.setText(n.convert(jComboBox3.getSelectedItem().toString(), jComboBox5.getSelectedItem().toString()));
     }//GEN-LAST:event_ConvertNumActionPerformed
 
@@ -1109,11 +1122,11 @@ public class GUI extends javax.swing.JFrame {
 
     private void BackButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton8ActionPerformed
         input = " ";
-        jTextArea2.setText("Equations Cleared");        
+        jTextArea2.setText("Equations Cleared");
     }//GEN-LAST:event_BackButton8ActionPerformed
 
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        
+
     }//GEN-LAST:event_jTextField9ActionPerformed
 
     private void CalculateArithmatic3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateArithmatic3ActionPerformed
@@ -1122,12 +1135,15 @@ public class GUI extends javax.swing.JFrame {
         jPanel20.add(Solver.d);
         Solver.d.repaint();
         jPanel20.repaint();
-      
-        
-        
-        
+
 
     }//GEN-LAST:event_CalculateArithmatic3ActionPerformed
+
+    private void BackButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton9ActionPerformed
+        jPanel18.setVisible(false);
+        this.setSize(871, 550);
+        jPanel2.setVisible(true);
+    }//GEN-LAST:event_BackButton9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1174,6 +1190,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton BackButton6;
     private javax.swing.JButton BackButton7;
     private javax.swing.JButton BackButton8;
+    private javax.swing.JButton BackButton9;
     private javax.swing.JButton CalculateArithmatic;
     private javax.swing.JButton CalculateArithmatic1;
     private javax.swing.JButton CalculateArithmatic2;
