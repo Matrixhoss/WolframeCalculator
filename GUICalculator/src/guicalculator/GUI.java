@@ -1117,9 +1117,10 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField9ActionPerformed
 
     private void CalculateArithmatic3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateArithmatic3ActionPerformed
-        Drawer d = new Drawer(jTextField9.getText());
-        d.setBounds(200, 10, 400, 400);
-        jPanel20.add(d);
+        Solver.d.setEquation(jTextField9.getText());
+        Solver.d.setBounds(200, 10, 400, 400);
+        jPanel20.add(Solver.d);
+        Solver.d.repaint();
         jPanel20.repaint();
       
         

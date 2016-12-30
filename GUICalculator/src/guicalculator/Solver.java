@@ -49,7 +49,7 @@ import com.wolfram.alpha.*;
 
 
 public class Solver {
-
+    public static Drawer d = new Drawer("");
     /**
      * @param args the command line arguments
     */
