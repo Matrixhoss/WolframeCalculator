@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package guicalculator;
 
-/**
- *
- * @author Hossam
- */
+
 public class Linear extends Calculations{
+    
     public  String Calculate (String equation){
      String s =Solver.solve(equation, "Solution");
          if(s.equals("")){
@@ -20,7 +13,6 @@ public class Linear extends Calculations{
                 StringBuilder ss = new StringBuilder(s);
                 ss.setCharAt(i, '=');
                 s = ss.toString();
-               
              }
          }
          System.out.println(s);

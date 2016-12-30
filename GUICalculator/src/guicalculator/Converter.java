@@ -7,8 +7,6 @@ public abstract class Converter {
     
     public Converter(String from){
     this.from=from;
-    
     }
-
     public abstract String convert(String f, String t);
 }

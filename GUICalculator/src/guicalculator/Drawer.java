@@ -8,7 +8,6 @@ public class Drawer extends PlotFunctionPanel {
 
     public Drawer(String s) {
         super(400, 40, s);
-      
-
+     
     }
 }
