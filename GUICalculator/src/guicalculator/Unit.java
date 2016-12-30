@@ -13,16 +13,16 @@ public class Unit extends Converter{
         char[] z;
         x = from + " " + fu + " to " + tu;
         to = Solver.solve(x,"Result");
-        y = to.toCharArray();
-        z = tu.toCharArray();
-        x="";
-        for (int i = 0; i < y.length; i++) {
-            if (y[i]==z[0]){
-            break;
-            }
-            x=x+y[i];
-        }
-        return x;
+//        y = to.toCharArray();
+//        z = tu.toCharArray();
+//        x="";
+//        for (int i = 0; i < y.length; i++) {
+//            if (y[i]==z[0]){
+//            break;
+//            }
+//            x=x+y[i];
+//        }
+        return to;
 
     }
 }
