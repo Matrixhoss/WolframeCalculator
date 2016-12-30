@@ -968,11 +968,14 @@ public class GUI extends javax.swing.JFrame {
         } else {
             input = input + "," + jTextField6.getText();
         }
-        jTextArea1.setText(jTextArea2.getText() + "\n " + jTextField5.getText());        // TODO add your handling code here:
+        jTextArea2.setText(jTextArea2.getText() + "\n " + jTextField6.getText());        // TODO add your handling code here:
     }//GEN-LAST:event_CalculateArithmatic2ActionPerformed
 
     private void BackButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton6ActionPerformed
-        // TODO add your handling code here:
+        EquationsHandler q = new EquationsHandler();
+        String x =q.Calculate(input);
+        input = " ";
+        jTextArea2.setText("Result = \n" + x);
     }//GEN-LAST:event_BackButton6ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
@@ -1003,7 +1006,7 @@ jTextArea1.setText("Equations Cleared");
 
     private void BackButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButton8ActionPerformed
 input = " ";
-jTextArea2.setText(jTextArea1.getText()+"\nEquations Cleared");        // TODO add your handling code here:
+jTextArea2.setText("Equations Cleared");        // TODO add your handling code here:
     }//GEN-LAST:event_BackButton8ActionPerformed
 
     /**

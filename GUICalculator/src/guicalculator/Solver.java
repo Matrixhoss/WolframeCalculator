@@ -126,7 +126,7 @@ public class Solver {
         // Use "pi" as the default query, or caller can supply it as the lone command-line argument.
         String input =X;
         
-        
+         String ret = "";
         // The WAEngine is a factory for creating WAQuery objects,
         // and it also used to perform those queries. You can set properties of
         // the WAEngine (such as the desired API output format types) that will
@@ -176,13 +176,14 @@ public class Solver {
                             for (Object element : subpod.getContents()) {
                                 if (element instanceof WAPlainText) {
                                    // System.out.println(((WAPlainText) element).getText());
-                                    String ret =((WAPlainText) element).getText();
+                                    ret =ret + "  "+((WAPlainText) element).getText();
                                     System.out.println("");
-                                    return ret ;
+                                  
                                     
                                 }
                             }
                         }
+                          return ret ;
                         }
                         System.out.println("");
                     }
