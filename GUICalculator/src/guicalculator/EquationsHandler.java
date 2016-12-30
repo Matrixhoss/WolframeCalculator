@@ -12,7 +12,7 @@ package guicalculator;
 public class EquationsHandler extends Calculations{
      public  String Calculate (String equation){
        
-     String s =Solver.solve("solve "+equation, "Result");
+     String s =Solver.solve(equation, "Solutions");
          if(s.equals("")){
          return "Cant Solve the equation ";
          }
