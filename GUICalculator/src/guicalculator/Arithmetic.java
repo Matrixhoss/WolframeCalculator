@@ -18,11 +18,11 @@ public class Arithmetic extends Calculations{
          } catch (NumberFormatException e) {
              y1 = true;
          }
-         try {
-              x2= Double.parseDouble(Solver.solve(equation, "Decimal approximation"));
-         } catch (NumberFormatException e) {
-             y2 = true;
-         }
+//         try {
+//              x2= Double.parseDouble(Solver.solve(equation, "Decimal approximation"));
+//         } catch (NumberFormatException e) {
+//             y2 = true;
+//         }
          try {
               x3= Double.parseDouble(Solver.solve(equation, "Exact result"));
          } catch (NumberFormatException e) {
@@ -32,11 +32,25 @@ public class Arithmetic extends Calculations{
          if (y1 == false) {
              return Solver.solve(equation, "Result");
          }
-         else if(y3 == false){
+         else if(!Solver.solve(equation, "Decimal approximation").equals("")){
+             
+             String s =Solver.solve(equation, "Decimal approximation");
+             String ss = "";
+             for (int i = 0; i < s.length(); i++) {
+                 if(s.toCharArray()[i]=='×'){
+                    ss = s.substring(i, s.length());
+                 }
+             }
+             if (s.length() > 15){
+                s = s.substring(0, 15);
+              } 
+             return s+ss ;
+         }
+         else if (y3 == false){
           return Solver.solve(equation, "Exact result");
          }
-         else{
-         return Solver.solve(equation, "Decimal approximation");
+         else {
+         return "Cant be solved";
          }
      
      }
